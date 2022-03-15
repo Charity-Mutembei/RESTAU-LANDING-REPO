@@ -3,49 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.homePage{
-    overflow-x: hidden;
-}
-#myVideo {
-    position: absolute;
-    overflow-x: hidden;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
-.content{
+div.card-img-overlay{
     margin-left: 80%;
-    position: absolute;
-    overflow: hidden;
-    bottom: 0;
-    background: rgba(0, 0, 0, 1);
-    /* color: red; */
-    /* width: 100%; */
-    /* padding: 20px; */
-    font-family: 'Vollkorn', serif;
+    border: 1px solid black;
+    background-color: #013220;
 }
-.title{
-    color: #FFDB58;
-    display:inline-block;
-    /* Apply animation to this element */
-    -webkit-animation: scrolling-left1 20s linear infinite;
-    animation: scrolling-left1 20s linear infinite;  
-}
-@keyframes scrolling-left1 {
-    0% {transform: translateX(100%);
-        -webkit-transform: translateX(100%);}
-      100% {transform: translateX(-100%);
-          -webkit-transform: translateX(-100%);}
-      }
-      @-webkit-keyframes scrolling-left1 {
-        0% {-webkit-transform: translateX(100%);}
-          100% {-webkit-transform: translateX(-100%);}
-      }
-
-.bodyCatch{
-    color: white;
-}
-.menu{
-    overflow-x: hidden;
+h1.card-title{
+    color: orangered;
+    margin-top: 100%;
+    font-family: 'Gugi', cursive;
 }
