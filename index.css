@@ -7,7 +7,8 @@
     overflow-x: hidden;
 }
 #myVideo {
-    position: fixed;
+    position: absolute;
+    overflow-x: hidden;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -15,12 +16,13 @@
   }
 .content{
     margin-left: 80%;
-    position: fixed;
+    position: absolute;
+    overflow: hidden;
     bottom: 0;
     background: rgba(0, 0, 0, 1);
     /* color: red; */
-    width: 100%;
-    padding: 20px;
+    /* width: 100%; */
+    /* padding: 20px; */
     font-family: 'Vollkorn', serif;
 }
 .title{
@@ -43,4 +45,7 @@
 
 .bodyCatch{
     color: white;
+}
+.menu{
+    overflow-x: hidden;
 }
