@@ -61,4 +61,12 @@ h1.card-title{
     height: 100%;
 }
 .delivery{
-  
+    overflow: hidden;
+}
+.heading{
+    color: orangered;
+    margin-top: 5%;
+    margin-left: 30%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5%;
+}
