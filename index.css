@@ -22,6 +22,7 @@ h1.card-title{
     margin-top: 4%;
     margin-left: 40%;
     font-family: 'Times New Roman', Times, serif;
+    color: orangered;
 }
 .sale{
     margin-top: 5%;
@@ -59,3 +60,5 @@ h1.card-title{
     background: rgba(0, 0, 0, 0.7);
     height: 100%;
 }
+.delivery{
+  
