@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-div.card-img-overlay{
+div.title{
+    /* margin-top: 30%; */
+    height: 100%;
     margin-left: 80%;
     border: 1px solid black;
     background-color: #013220;
@@ -12,4 +14,10 @@ h1.card-title{
     color: orangered;
     margin-top: 100%;
     font-family: 'Gugi', cursive;
+}
+.sale{
+    margin-top: 5%;
+}
+.sale-2{
+    margin-top: 2%;
 }
