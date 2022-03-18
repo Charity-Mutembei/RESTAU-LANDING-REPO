@@ -64,9 +64,20 @@ h1.card-title{
     overflow: hidden;
 }
 .heading{
+    overflow: hidden;
     color: orangered;
     margin-top: 5%;
     margin-left: 30%;
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 5%;
+}
+.drniks{
+    overflow: hidden;
+}
+.card-body{
+    background-color: black;
+}
+.drinks{
+    margin: 5%;
+    color: white;
 }
