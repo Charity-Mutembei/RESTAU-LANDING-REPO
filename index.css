@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navigation{
+    margin-left: 50%;
+    margin-right: 50%;
+}
+.floater{
+    margin-top: 25%;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+ }
+ .text{
+     font-family: 'IBM Plex Serif', serif;
+     /* background-color: rgb(0, 0, 0, 0.5); */
+     width: 50%;
+     margin-top: 18%;
+    text-align: center; 
+ }
+ .button{
+    font-family: 'Slabo 27px', serif;
+    font-weight: 70%;
+     color: white;
+     cursor: pointer;
+
+ }
