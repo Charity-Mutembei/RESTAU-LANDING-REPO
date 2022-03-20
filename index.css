@@ -30,3 +30,10 @@
  #menuDisplay{
      overflow-x: hidden;
  }
+ .heading{
+    font-family: 'IBM Plex Serif', serif;
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+    color: yellow;
+ }
