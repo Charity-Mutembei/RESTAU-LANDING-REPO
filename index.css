@@ -49,3 +49,18 @@
  .third{
      overflow: hidden;
  }
+ i.fa-solid.fa-cart-plus:before{
+     content: attr(data-count);
+     position: absolute;
+     color: white;
+     right: 16px;
+     font-size: 15px;
+     text-align: center;
+     top: -12px;
+     width: 20px;
+     height: 20px;
+     background-color: red;
+     border-radius: 50%;
+     opacity: 0;
+
+ }
