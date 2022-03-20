@@ -20,7 +20,7 @@
      <script src="https://kit.fontawesome.com/502397a549.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" 
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    
     <title>PIZZAJET/MENU</title>
 </head>
 <body>
@@ -74,7 +74,7 @@
                 <h1>MENU</h1>
                </div>
                <div class="col">
-                <i class="fa-solid fa-cart-plus" style='font-size:48px;color:red;'></i>
+                <a href="cart.html"><i class="fa-solid fa-cart-plus" style='font-size:48px;color:red;'value=5></i></a>
                </div>
            </div>       
         <marquee direction="right" 
@@ -86,29 +86,29 @@
        <div class="first">
          <div class="row row-cols-1 row-cols-md-3 g-4">
            <div class="col">
-             <div class="card h-100">
+             <div class="card h-100" id="Mp" name="pizza1">
                <img src="ASSETS/IMAGES/PIZZAS/istockphoto-1295797149-170667a.jpg" class="card-img-top" alt="...">
                <div class="card-body">
                  <h5 class="card-title">Margharita Pizza</h5>
-                 <p class="card-text">Pizza margherita, as the Italians call it, is a simple 
+                 <p class="card-text" id="describe">Pizza margherita, as the Italians call it, is a simple 
                    pizza hailing from Naples. When done right, margherita pizza features a bubbly 
                    crust, crushed San Marzano tomato sauce, fresh mozzarella and basil, a drizzle of 
                    olive oil, and a sprinkle of salt. That is all.</p>
                </div>
                <div class="card-footer">
-                 <small class="text-muted">Small = Kshs. 600</small> <br> <small class="text-muted">large = Kshs. 1000</small>
+                 <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
                </div>
                <div class="order">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
+                      Small
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
+                      Large
                     </label>
                   </div>
                </div>
@@ -116,29 +116,29 @@
              </div>
            </div>
            <div class="col">
-             <div class="card h-100">
+             <div class="card h-100" id="Cp" name="pizza2">
                <img src="ASSETS/IMAGES/PIZZAS/istockphoto-1280329631-170667a.jpg" class="card-img-top" alt="...">
                <div class="card-body">
                  <h5 class="card-title">Cheese Pizza</h5>
-                 <p class="card-text">Although a Margherita pizza is technically a cheese pizza,
+                 <p class="card-text" id="describe1">Although a Margherita pizza is technically a cheese pizza,
                     a 'regular cheese pizza' is a more basic meal with just tomato sauce topped with cheese.
                      Typically a cheese pizza will also use mozzarella but other cheeses such as parmesan may 
                      also be mixed in the toppings</p>
                </div>
                <div class="card-footer">
-                <small class="text-muted">Small = Kshs. 600</small> <br> <small class="text-muted">large = Kshs. 1000</small>
+                <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
               </div>
               <div class="order">
                <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                    <label class="form-check-label" for="flexCheckDefault">
-                     Default checkbox
+                   Small
                    </label>
                  </div>
                  <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                    <label class="form-check-label" for="flexCheckChecked">
-                     Checked checkbox
+                     Large
                    </label>
                  </div>
               </div>
@@ -146,7 +146,7 @@
              </div>
            </div>
            <div class="col">
-             <div class="card h-100">
+             <div class="card h-100" id="Bp" name="pizza3">
                <img src="ASSETS/IMAGES/PIZZAS/istockphoto-1340589333-170667a.jpg" class="card-img-top" alt="...">
                <div class="card-body">
                  <h5 class="card-title">Beef Pizza</h5>
@@ -155,19 +155,19 @@
                    that go with beef are onions, tomatoes, bell peppers, jalapenos, and extra cheese</p>
                </div>
                <div class="card-footer">
-                <small class="text-muted">Small = Kshs. 600</small> <br> <small class="text-muted">large = Kshs. 1000</small>
+                <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
               </div>
               <div class="order">
                <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                    <label class="form-check-label" for="flexCheckDefault">
-                     Default checkbox
+                     Small
                    </label>
                  </div>
                  <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                    <label class="form-check-label" for="flexCheckChecked">
-                     Checked checkbox
+                     Large
                    </label>
                  </div>
               </div>
@@ -182,25 +182,25 @@
             <div class="card h-100">
               <img src="ASSETS/IMAGES/PIZZAS/istockphoto-1349383878-170667a.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Hawaian Pizza</h5>
+                <h5 class="card-title" id="Hp">Hawaian Pizza</h5>
                 <p class="card-text">Classic Hawaiian Pizza combines pizza sauce, cheese, cooked ham, 
                   and pineapple. This crowd-pleasing pizza recipe starts with my homemade pizza crust and 
                   is finished with a sprinkle of crispy bacon</p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Small = Kshs. 600</small> <br> <small class="text-muted">large = Kshs. 1000</small>
+                <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
               </div>
               <div class="order">
                <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                    <label class="form-check-label" for="flexCheckDefault">
-                     Default checkbox
+                     Small
                    </label>
                  </div>
                  <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                    <label class="form-check-label" for="flexCheckChecked">
-                     Checked checkbox
+                     Large
                    </label>
                  </div>
               </div>
@@ -211,26 +211,26 @@
             <div class="card h-100">
               <img src="ASSETS/IMAGES/PIZZAS/istockphoto-938742222-170667a.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Pepperoni Pizza</h5>
+                <h5 class="card-title" id="Pp">Pepperoni Pizza</h5>
                 <p class="card-text">Pepperoni is a meat mixture of beef and pork that has been cured and 
                   seasoned with paprika and chili powder. It's a loved American food staple and most commonly
                    used to make pepperoni pizza. Making pepperoni pizza is as easy as layering the ingredients
                     on a pizza crust.</p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Small = Kshs. 600</small> <br> <small class="text-muted">large = Kshs. 1000</small>
+                <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
               </div>
               <div class="order">
                <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                    <label class="form-check-label" for="flexCheckDefault">
-                     Default checkbox
+                     Small
                    </label>
                  </div>
                  <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                    <label class="form-check-label" for="flexCheckChecked">
-                     Checked checkbox
+                     Large
                    </label>
                  </div>
               </div>
@@ -241,25 +241,25 @@
             <div class="card h-100">
               <img src="ASSETS/IMAGES/PIZZAS/istockphoto-839988946-170667a.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Mixed Pizza</h5>
+                <h5 class="card-title" id="Mp">Mixed Pizza</h5>
                 <p class="card-text"> picked up Combination Pizza, sometimes called a "supreme' at other pizzerias,
                    which is topped with a fairly standard mix of pepperoni, bell peppers, onions, olives, sausage, and
                     mushrooms</p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Small = Kshs. 600</small> <br> <small class="text-muted">large = Kshs. 1000</small>
+                <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
               </div>
               <div class="order">
                <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                    <label class="form-check-label" for="flexCheckDefault">
-                     Default checkbox
+                     Small
                    </label>
                  </div>
                  <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                    <label class="form-check-label" for="flexCheckChecked">
-                     Checked checkbox
+                     Large
                    </label>
                  </div>
               </div>
@@ -285,23 +285,23 @@
               <div class="card h-100">
                 <img src="ASSETS/IMAGES/DRINKS/2ede079a-1ef6-4f97-88b4-231b604d60e7.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Margharita's Sister</h5>
+                  <h5 class="card-title" id="Ms">Margharita's Sister</h5>
                   <p class="card-text">Like a cold orange drinks on a hot day? This is your must have.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Small = Kshs. 300</small> <br> <small class="text-muted">large = Kshs. 400</small>
+                  <small class="price-s">Small = Kshs. 300</small> <br> <small class="price-l">large = Kshs. 400</small>
                 </div>
                 <div class="order">
                  <div class="form-check">
                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                      <label class="form-check-label" for="flexCheckDefault">
-                       Default checkbox
+                       Small
                      </label>
                    </div>
                    <div class="form-check">
                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                      <label class="form-check-label" for="flexCheckChecked">
-                       Checked checkbox
+                      Large
                      </label>
                    </div>
                 </div>
@@ -312,23 +312,23 @@
               <div class="card h-100">
                 <img src="ASSETS/IMAGES/DRINKS/_ (10).jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">ICY</h5>
+                  <h5 class="card-title" id="IY">ICY</h5>
                   <p class="card-text">Ice tea or Ice coffee?</p>
                 </div>
                 <div class="card-footer">
-                 <small class="text-muted">Small = Kshs. 300</small> <br> <small class="text-muted">large = Kshs. 400</small>
+                 <small class="price-s">Small = Kshs. 300</small> <br> <small class="price-l">large = Kshs. 400</small>
                </div>
                <div class="order">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
+                      Small
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
+                      Large
                     </label>
                   </div>
                </div>
@@ -339,23 +339,23 @@
               <div class="card h-100">
                 <img src="ASSETS/IMAGES/DRINKS/Starbucks Stirring Up A Whole New Way To Experience Tea - The Coffee Chic.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Starbucks-Tevana</h5>
+                  <h5 class="card-title" id="St">Starbucks-Tevana</h5>
                   <p>This is a collabo drink with Starbucks for our mutual customers.</p>
                 </div>
                 <div class="card-footer">
-                 <small class="text-muted">Small = Kshs. 300</small> <br> <small class="text-muted">large = Kshs. 500</small>
+                 <small class="price-s">Small = Kshs. 300</small> <br> <small class="price-l">large = Kshs. 500</small>
                </div>
                <div class="order">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
+                    Small
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
+                    Large
                     </label>
                   </div>
                </div>
@@ -363,6 +363,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="select">
+
         </div>
       </div>
     </section>
@@ -377,5 +380,6 @@
         </div>
       </div>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
