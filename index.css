@@ -30,10 +30,19 @@
  #menuDisplay{
      overflow-x: hidden;
  }
+ .first{
+     overflow: hidden;
+ }
+ .second{
+     overflow: hidden;
+ }
  .heading{
     font-family: 'IBM Plex Serif', serif;
     align-items: center;
     text-align: center;
     margin: 2%;
     color: yellow;
+ }
+ button{
+    background-color: red;
  }
