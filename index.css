@@ -46,3 +46,6 @@
  button{
     background-color: red;
  }
+ .third{
+     overflow: hidden;
+ }
