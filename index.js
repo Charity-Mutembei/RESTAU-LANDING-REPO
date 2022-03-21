@@ -35,27 +35,38 @@
 
 
 //below is an incluse of all the 'add to cart' button of the same class named 'shop'
-let addToCartBtn = document.getElementsByClassName('shop');
+// let addToCartBtn = document.getElementsByClassName('shop');
 //below is a loop 
-for (i= 0; i < addToCartBtn.length; i++){
+// for (i= 0; i < addToCartBtn.length; i++){
     //below each of the 'add To Cart button is included through the i]
-    addToCartBtn[i].addEventListener('click', addToCart)
+    // addToCartBtn[i].addEventListener('click', addToCart)
     //above, we just invested a function called 'addToCart which tells, when the respective or any of the 'Add to Cart' they add the product to the cart.
-}
+// }
 
 //lets make the 'addToCart' function come to life
 
-function addToCart(event){
+// function addToCart(event){
     //above, the word 'event' in the bracket of the created function is an argument
-   let btn = event.target
+//    let btn = event.target
 //    let btnParent = btn.ParentElement
-let btnParent= document.getElementsByClassName('card-body');
-let btnGrandParent = document.getElementsByClassName('card.h-100'); 
+// let btnParent= document.getElementsByClassName('card-body');
+// let btnGrandParent = document.getElementsByClassName('card.h-100'); 
 //    let btnGrandParent= btn.ParentElement.ParentElement
-   let itemName = btnParent.children[0].innerText
+//    let itemName = btnParent.children[0].innerText
 // let itemName = document.getElementsByTagName('h5');
 // let itemName = btn.clossest.('classname');
    
-    console.log(itemName)
+//     console.log(itemName)
 
+// }
+
+//constructor 
+function Pizza(size, crust, toppings, noOfPizza){
+    this.size = size;
+    this.crust = crust;
+    this.toppings = toppings;
+    this.noOfPizza = noOfPizza;
 }
+
+var inputSize = document.getElementsByClassName('form-check-label').checked;
+var inputCrust = document.getElementsByClassName
