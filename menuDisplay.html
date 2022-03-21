@@ -83,7 +83,8 @@
             <h3>PIZZA FIRST? SELECT WHAT YOU LIKE BELOW!</h3>
         </marquee>
        </div>
-       <div class="first">
+       <div class="cart" id="cart">
+         <div class="first">
          <div class="row row-cols-1 row-cols-md-3 g-4">
            <div class="col">
              <div class="card h-100" id="Mp" name="pizza1">
@@ -96,23 +97,29 @@
                    olive oil, and a sprinkle of salt. That is all.</p>
                </div>
                <div class="card-footer">
-                 <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
+                 <!-- <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l"> Medium = Kshs. 900</small> <br> <small cla></small> -->
                </div>
                <div class="order">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Small
+                      Small - Ksh.600
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      Large
+                      Medium - Kshs.900
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Medium - Kshs.1200
                     </label>
                   </div>
                </div>
-               <button>Add to Cart</button>
+               <button class="shop">Add to Cart</button>
              </div>
            </div>
            <div class="col">
@@ -126,23 +133,29 @@
                      also be mixed in the toppings</p>
                </div>
                <div class="card-footer">
-                <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
+                <!-- <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small> -->
               </div>
               <div class="order">
                <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                    <label class="form-check-label" for="flexCheckDefault">
-                   Small
+                   Small - Kshs.600
                    </label>
                  </div>
                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Medium - Kshs.900
+                  </label>
+                </div>
+                 <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                    <label class="form-check-label" for="flexCheckChecked">
-                     Large
+                     Large - Kshs.1200
                    </label>
                  </div>
               </div>
-              <button>Add to Cart</button>
+              <button class="shop">Add to Cart</button>
              </div>
            </div>
            <div class="col">
@@ -155,23 +168,29 @@
                    that go with beef are onions, tomatoes, bell peppers, jalapenos, and extra cheese</p>
                </div>
                <div class="card-footer">
-                <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
+                <!-- <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small> -->
               </div>
               <div class="order">
                <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                    <label class="form-check-label" for="flexCheckDefault">
-                     Small
+                     Small - Kshs. 600
                    </label>
                  </div>
                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Medium - Kshs.900
+                  </label>
+                </div>
+                 <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                    <label class="form-check-label" for="flexCheckChecked">
-                     Large
+                     Large - Kshs.1200
                    </label>
                  </div>
               </div>
-              <button>Add to Cart</button>
+              <button class="shop">Add to Cart</button>
              </div>
            </div>
          </div>
@@ -188,23 +207,29 @@
                   is finished with a sprinkle of crispy bacon</p>
               </div>
               <div class="card-footer">
-                <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
+                <!-- <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small> -->
               </div>
               <div class="order">
                <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                    <label class="form-check-label" for="flexCheckDefault">
-                     Small
+                     Small - Kshs.600
                    </label>
                  </div>
                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Medium = Kshs.900
+                  </label>
+                </div>
+                 <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                    <label class="form-check-label" for="flexCheckChecked">
-                     Large
+                     Large - Kshs.1200
                    </label>
                  </div>
               </div>
-              <button>Add to Cart</button>
+              <button class="shop">Add to Cart</button>
             </div>
           </div>
           <div class="col">
@@ -218,23 +243,29 @@
                     on a pizza crust.</p>
               </div>
               <div class="card-footer">
-                <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
+                <!-- <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small> -->
               </div>
               <div class="order">
                <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                    <label class="form-check-label" for="flexCheckDefault">
-                     Small
+                     Small - Kshs.600
                    </label>
                  </div>
                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Medium - Kshs.900
+                  </label>
+                </div>
+                 <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                    <label class="form-check-label" for="flexCheckChecked">
-                     Large
+                     Large - Kshs.1200
                    </label>
                  </div>
               </div>
-              <button>Add to Cart</button>
+              <button class="shop">Add to Cart</button>
             </div>
           </div>
           <div class="col">
@@ -247,23 +278,29 @@
                     mushrooms</p>
               </div>
               <div class="card-footer">
-                <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small>
+                <!-- <small class="price-s">Small = Kshs. 600</small> <br> <small class="price-l">large = Kshs. 1000</small> -->
               </div>
               <div class="order">
                <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                    <label class="form-check-label" for="flexCheckDefault">
-                     Small
+                     Small - Kshs.600
                    </label>
                  </div>
                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Medium - Kshs.900
+                  </label>
+                </div>
+                 <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                    <label class="form-check-label" for="flexCheckChecked">
-                     Large
+                     Large - Kshs.1200
                    </label>
                  </div>
               </div>
-              <button>Add to Cart</button>
+              <button class="shop">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -289,23 +326,23 @@
                   <p class="card-text">Like a cold orange drinks on a hot day? This is your must have.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="price-s">Small = Kshs. 300</small> <br> <small class="price-l">large = Kshs. 400</small>
+                  <!-- <small class="price-s">Small = Kshs. 300</small> <br> <small class="price-l">large = Kshs. 400</small> -->
                 </div>
                 <div class="order">
                  <div class="form-check">
                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                      <label class="form-check-label" for="flexCheckDefault">
-                       Small
+                       Small - Kshs.300
                      </label>
                    </div>
                    <div class="form-check">
                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                      <label class="form-check-label" for="flexCheckChecked">
-                      Large
+                      Large - Kshs.400
                      </label>
                    </div>
                 </div>
-                <button>Add to Cart</button>
+                <button class="shop">Add to Cart</button>
               </div>
             </div>
             <div class="col">
@@ -316,23 +353,23 @@
                   <p class="card-text">Ice tea or Ice coffee?</p>
                 </div>
                 <div class="card-footer">
-                 <small class="price-s">Small = Kshs. 300</small> <br> <small class="price-l">large = Kshs. 400</small>
+                 <!-- <small class="price-s">Small = Kshs. 300</small> <br> <small class="price-l">large = Kshs. 400</small> -->
                </div>
                <div class="order">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Small
+                      Small - Kshs. 300
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      Large
+                      Large - Kshs. 400
                     </label>
                   </div>
                </div>
-               <button>Add to Cart</button>
+               <button class="shop">Add to Cart</button>
               </div>
             </div>
             <div class="col">
@@ -343,27 +380,28 @@
                   <p>This is a collabo drink with Starbucks for our mutual customers.</p>
                 </div>
                 <div class="card-footer">
-                 <small class="price-s">Small = Kshs. 300</small> <br> <small class="price-l">large = Kshs. 500</small>
+                 <!-- <small class="price-s">Small = Kshs. 300</small> <br> <small class="price-l">large = Kshs. 500</small> -->
                </div>
                <div class="order">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                    Small
+                    Small - Kshs.300
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                    Large
+                    Large - Kshs.400
                     </label>
                   </div>
                </div>
-               <button>Add to Cart</button>
+               <button class="shop">Add to Cart</button>
               </div>
             </div>
           </div>
         </div>
+      </div>
         <div class="select">
 
         </div>
@@ -380,6 +418,6 @@
         </div>
       </div>
     </section>
-    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
 </body>
 </html>
