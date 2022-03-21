@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cart{
+    background-color: white;
+}
+.orderPlaced >h1{
+font-family: 'IBM Plex Serif', serif;
+margin-top: 1%;
+text-align: center;
+}
