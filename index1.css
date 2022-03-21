@@ -11,3 +11,9 @@ font-family: 'IBM Plex Serif', serif;
 margin-top: 1%;
 text-align: center;
 }
+.whatIsInTheBag{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    align-items: center;
+
+}
