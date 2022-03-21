@@ -12,8 +12,24 @@ margin-top: 1%;
 text-align: center;
 }
 .whatIsInTheBag{
-    display: grid;
-    grid-template-columns: 30% 50% 20%;
-    align-items: center;
-
+   border: 1px solid black;
+   width: 25.5%;
+   font-family: 'IBM Plex Serif', serif;
+}
+.fa.fa-trash{
+    color: red;
+    font-size: 20px;
+    margin-left: 51%;
+    cursor: pointer;
+}
+.whatYouNeedToPay{
+    border-top: 5px solid black;
+    width: 25.5%;
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    margin-top: 1%;
+}
+.press{
+    background-color: red;
+    width: 505px;
 }
