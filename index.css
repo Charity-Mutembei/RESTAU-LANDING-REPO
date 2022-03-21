@@ -61,3 +61,11 @@
     top:-10px;
     opacity:0.9;
  }
+ .showShop{
+     width: 250px;
+     float: right;
+     text-align: center;
+     border: 1px solid rgb(252, 248, 248);
+     overflow-y: scroll;
+     height: 100%;
+ }

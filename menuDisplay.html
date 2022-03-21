@@ -20,10 +20,11 @@
      <script src="https://kit.fontawesome.com/502397a549.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" 
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    
+  
     <title>PIZZAJET/MENU</title>
 </head>
 <body>
+  <div class="container">
     <section>
         <div id="menuDisplay">
           <div class="navigation2">
@@ -74,7 +75,7 @@
                 <h1>MENU</h1>
                </div>
                <div class="col">
-                <a href="cart.html"><i class="fa-solid fa-cart-plus" style='font-size:48px;color:red;'value=5></i></a>
+                <a href="#cart"><i class="fa-solid fa-cart-plus" style='font-size:48px;color:red;'value=5></i></a>
                </div>
            </div>       
         <marquee direction="right" 
@@ -119,14 +120,14 @@
                     </label>
                   </div>
                </div>
-               <button class="shop" onclick="addToCart(mmp)">Add to Cart</button>
+               <button class="shop">Add to Cart</button>
              </div>
            </div>
            <div class="col">
              <div class="card h-100" id="Cp" name="pizza2">
                <img src="ASSETS/IMAGES/PIZZAS/istockphoto-1280329631-170667a.jpg" class="card-img-top" alt="...">
                <div class="card-body">
-                 <h5 class="card-title">Cheese Pizza</h5>
+                 <h5 class="card-title" id="identify">Cheese Pizza</h5>
                  <p class="card-text" id="describe1">Although a Margherita pizza is technically a cheese pizza,
                     a 'regular cheese pizza' is a more basic meal with just tomato sauce topped with cheese.
                      Typically a cheese pizza will also use mozzarella but other cheeses such as parmesan may 
@@ -155,7 +156,7 @@
                    </label>
                  </div>
               </div>
-              <button class="shop" onclick="addToCart(cp)">Add to Cart</button>
+              <button class="shop" >Add to Cart</button>
              </div>
            </div>
            <div class="col">
@@ -190,7 +191,7 @@
                    </label>
                  </div>
               </div>
-              <button class="shop" onclick="addToCart(bp)">Add to Cart</button>
+              <button class="shop" >Add to Cart</button>
              </div>
            </div>
          </div>
@@ -229,7 +230,7 @@
                    </label>
                  </div>
               </div>
-              <button class="shop" onclick="addToCart(hp)">Add to Cart</button>
+              <button class="shop" >Add to Cart</button>
             </div>
           </div>
           <div class="col">
@@ -265,7 +266,7 @@
                    </label>
                  </div>
               </div>
-              <button class="shop" onclick="addToCart(pp)">Add to Cart</button>
+              <button class="shop" >Add to Cart</button>
             </div>
           </div>
           <div class="col">
@@ -300,7 +301,7 @@
                    </label>
                  </div>
               </div>
-              <button class="shop" onclick="addToCart(mp)">Add to Cart</button>
+              <button class="shop" >Add to Cart</button>
             </div>
           </div>
         </div>
@@ -342,7 +343,7 @@
                      </label>
                    </div>
                 </div>
-                <button class="shop" onclick="addToCart(ms)">Add to Cart</button>
+                <button class="shop">Add to Cart</button>
               </div>
             </div>
             <div class="col">
@@ -369,7 +370,7 @@
                     </label>
                   </div>
                </div>
-               <button class="shop" onclick="addToCart(iy)">Add to Cart</button>
+               <button class="shop">Add to Cart</button>
               </div>
             </div>
             <div class="col">
@@ -396,7 +397,7 @@
                     </label>
                   </div>
                </div>
-               <button class="shop" onclick="addToCart(st)">Add to Cart</button>
+               <button class="shop" >Add to Cart</button>
               </div>
             </div>
           </div>
@@ -418,6 +419,91 @@
         </div>
       </div>
     </section>
-    <script src="index.js"></script>
+
+    <!-- cart  -->
+    <section>
+       <div class="show">
+          <!-- <div class="navigation2">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="ASSETS/IMAGES/LOGO/logo1.png" alt="" 
+                      width="150" height="50" class="d-inline-block align-text-top">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-warning btn-dark" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
+             </div> -->
+         </div> 
+         <!-- end of navbar  -->
+
+         <!-- <div class="orderPlaced">
+             <h1 class="title">Orders Made</h1> -->
+             <!-- <div class="whatIsInTheBag">
+                 <div class="shoppingBag">
+                     <img src="/ASSETS/IMAGES/PIZZAS/istockphoto-1295797149-170667a.jpg" alt="" class="margharita">
+                     <div class="details1">
+                         <div class="product-title">Margharitta Pizza</div>
+                         <div class="smallPrice">Kshs.600</div>
+                         <div class="bigPrice">Kshs.1000</div>
+                         <input type="number" value="1" class="numberOfPizza">
+                     </div> -->
+
+                     <!-- what if you do not want it -->
+                     <!-- <i class="fa fa-trash" id="trash" aria-hidden="true"></i>
+                 </div>
+             </div>
+         </div>
+         <div class="whatYouNeedToPay">
+             <div class="totalName">Your Total</div>
+             <div class="totalPrice">Kshs.0</div>
+         </div> -->
+
+         <!-- place the order  -->
+         <!-- <div class="pressTheButton">
+             <button type="button" class="press">Make an Order</button>
+         </div> -->
+      </div>
+  </section>
+
+
+
+
+
+
+
+  </div>
+  <div class="showShop">
+    <h1>HELLO</h1>
+  </div>
+    
+  <script src="index.js"></script>
 </body>
 </html>
