@@ -68,5 +68,18 @@ function Pizza(size, crust, toppings, noOfPizza){
     this.noOfPizza = noOfPizza;
 }
 
-var inputSize = document.getElementsByClassName('form-check-label').checked;
-var inputCrust = document.getElementsByClassName
+// var inputPizzaSize = document.getElementById('size').checked;
+// var inputDrinkSize = document.getElementById('size2').checked;
+
+var inputPizzaSize = document.querySelectorAll('#size').checked;
+var inputDrinkSize = document.querySelectorAll('#size2').checked;
+
+// console.log(inputPizzaSize);
+
+let submitButton = document.querySelector('.shop');
+submitButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    console.log (inputPizzaSize)
+});
+
+// var inputCrust = document.getElementsByClassName
