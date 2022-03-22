@@ -61,25 +61,39 @@
 // }
 
 //constructor 
-function Pizza(size, crust, toppings, noOfPizza){
-    this.size = size;
-    this.crust = crust;
-    this.toppings = toppings;
-    this.noOfPizza = noOfPizza;
-}
+// function Pizza(size, crust, toppings, noOfPizza){
+//     this.size = size;
+//     this.crust = crust;
+//     this.toppings = toppings;
+//     this.noOfPizza = noOfPizza;
+// }
 
 // var inputPizzaSize = document.getElementById('size').checked;
 // var inputDrinkSize = document.getElementById('size2').checked;
 
-var inputPizzaSize = document.querySelectorAll('#size').checked;
-var inputDrinkSize = document.querySelectorAll('#size2').checked;
+// var inputPizzaSize = document.querySelectorAll('#size').checked;
+// var inputDrinkSize = document.querySelectorAll('#size2').checked;
 
 // console.log(inputPizzaSize);
 
-let submitButton = document.querySelector('.shop');
-submitButton.addEventListener('click', (e) => {
-    e.preventDefault()
-    console.log (inputPizzaSize)
-});
+// let submitButton = document.querySelector('.shop');
+// submitButton.addEventListener('click', (e) => {
+//     e.preventDefault()
+//     console.log (inputPizzaSize)
+// });
 
 // var inputCrust = document.getElementsByClassName
+
+
+$(() => {
+    $("input:checkbox").change ((e) => {
+        var array = [];
+        e.preventDefault();
+        var pizzaSize = parseInt($("input:checkbox:checked").val());
+
+        $.each($("input[type = checkbox]: checked"), function(){
+            array.push(parseInt($(this).val()));
+        })
+        console.log (array);
+    })
+})
