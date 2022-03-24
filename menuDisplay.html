@@ -175,7 +175,7 @@
          </div>
          <div class="col" style="background-color: black; color: white;">
 
-          <h1>HEY THERE? KEY IN YOUR ORDER OVER HERE</h1>
+          <h1 style="justify-items: center; text-align: center; color: olive;">HEY THERE? KEY IN YOUR ORDER OVER HERE</h1>
            <section id="makeOrder">
              <div class="order-container container mt-5">
                <form id="order-form">
@@ -211,11 +211,11 @@
                         <input type="radio" value="large" name="size" id="large">
                         Large</label>
                     </div>
-                    <select name="" id="cr">
+                    <select name="" id="cr" style="width: 200px;">
                       <option value="Crispy">Crispy</option>
                       <option value="Stuffed">Stuffed</option>
                     </select>
-                    <input type="number" id="qt" max="10" min="1" placeholder="Enter Quantity" style="width: 200px; background-color: black; color: white;">
+                    <div class="topa">
                       <label for="garlic">
                         <input type="checkbox" value="sarlic" name="toppings" id="garlic">
                         Garlic</label>
@@ -224,8 +224,14 @@
                         Pepper</label>
                       <label for="bf"> 
                         <input type="checkbox" value="sausage" name="toppings" id="sausage">
-                        Sausage</label>
+                        Sausage</label
                     </div>
+                    <div class="qty" style="margin-top: 1%;">
+
+                    <input type="number" id="qt" max="10" min="1" placeholder="Enter Quantity" style="width: 200px; background-color: black; color: white; border: 1px solid white;">
+
+                    </div>
+                    
                     <h3 style="font-family: 'poppins'; border: 2px solid olive; text-align: center; background-color: black; margin-top: 2%;">DELIVERY? <br> select your location below if interested</h3>
                     <h4 style="color: yellow;">DELIVERY?</h4>
                     <select name="" id="dr" style="margin-top: 1%; background-color: olive; margin-bottom: 2%;">
@@ -235,10 +241,10 @@
                       <option value="None">Outside Nairobi</option>
                     </select>
                     <div class="contact">
-                      <input type="number" id="ct"placeholder="Enter Phone Number">
+                      <input type="text" id="ct"placeholder="Enter Phone Number" style="border:rounded;">
                     </div>
                     <div class="butt">
-                      <button id="add-item"> Add Item</button>
+                      <button id="add-item" style="width: 200px; margin-top: 3%; margin-left: 30%; background-color: white;"> Add Item</button>
 
                     </div>
            
@@ -246,7 +252,7 @@
                  
                   </select>
                 </form>
-              <table class="table">
+              <table class="table" style="border: 1px solid olive; margin-top: 3%;">
                 <thead>
                   <tr>
                     <th>flavor</th>
@@ -258,7 +264,7 @@
                     <th>Total</th>
                   </tr>
                 </thead>
-                <tbody id="tbod">
+                <tbody id="tbod" style="color: white;"> 
                   <tr>
                     <td id="p-flavor">Flavour</td>
                     <td id="p-size">Size</td>
@@ -270,7 +276,7 @@
                   </tr>
                 </tbody>
               </table>  
-              <button id="checkout">Checkout</button>
+              <button id="checkout" style="width: 200px; background-color:white; margin-left: 30%;">Checkout</button>
              </div>
            </section>
          </div>
