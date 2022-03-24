@@ -225,14 +225,20 @@
                         <input type="checkbox" value="sausage" name="toppings" id="sausage">
                         Sausage</label>
                     </div>
-                    <button id="add-item"> Add Item</button>
+                    <h3 style="font-family: 'poppins'; border: 2px solid black; text-align: center; background-color: olive; margin-top: 2%;">DELIVERY? <br> select your location below if interested</h3>
+                    <select name="" id="dr">
+                      <option value="No">Not interested</option>
+                      <option value="Accessible">Nairobi</option>
+                      <option value="Within">Outskirts of Nairobi</option>
+                      <option value="None">Outside Nairobi</option>
+                    </select>
+                    <div class="butt">
+                      <button id="add-item"> Add Item</button>
+
+                    </div>
+           
                   </div>
-                  <h3 style="font-family: 'poppins'; border: 2px solid black; text-align: center; background-color: olive; margin-top: 2%;">DELIVERY? <br> select your location below if interested</h3>
-                  <select name="" id="dr">
-                    <option value="No">No interested</option>
-                    <option value="Accessible">Nairobi</option>
-                    <option value="Within">Outskirts of Nairobi</option>
-                    <option value="No">Outside Nairobi</option>
+                 
                   </select>
                 </form>
               <table class="table">
@@ -242,6 +248,9 @@
                     <th>Size</th>
                     <th>Crust</th>
                     <th>Toppings</th>
+                    <th>Quantity</th>
+                    <th>Area</th>
+                    <th>Total</th>
                   </tr>
                 </thead>
                 <tbody id="tbod">
@@ -251,6 +260,7 @@
                     <td id="p-crust">Crust</td>
                     <td id="p-toppings">Toppings</td>
                     <td id="p-qt">Quantity</td>
+                    <td id="p-area">Area</td>
                     <td id="p-total">Total</td>
                   </tr>
                 </tbody>

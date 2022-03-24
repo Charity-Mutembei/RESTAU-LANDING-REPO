@@ -4,6 +4,7 @@ let totalOrders = 0;
 let crust_price;
 let size_price;
 let topping_price;
+let destination_price;
 let total = 0;
 
 let getTotals = () => {};
@@ -11,12 +12,13 @@ let totalToppingsArray = [];
 
 //Pizza function constructor
 
-function GetPizza (name, size, crust, topping, quantity){
+function GetPizza (name, size, crust, topping, quantity, area){
     this.name = name;
     this.size = size;
     this.crust = crust;
     this.topping = topping;
     this.quantity = quantity;
+    this.area = area;
 }
 $('#add-item').click((e)=>{
     e.preventDefault();
@@ -28,8 +30,9 @@ $('#add-item').click((e)=>{
     let pCrust = $("#cr option:selected").val();
     let pQuantity = $("#qt").val();
     let pToppings = [];
+    let pArea = $("#dr option:selected").val();
 
-    console.log("${pName}${pSize}${pCrust}${pQuantity}")
+    console.log("${pName}${pSize}${pCrust}${pQuantity}${pArea}")
 
     $.each($("input[name='toppings']:checked"), function (){
         pToppings.push($(this).val());
@@ -48,9 +51,9 @@ $('#add-item').click((e)=>{
     }
 
     let orderPizza = new
-    GetPizza(pName, pSize, pCrust, pQuantity, pToppings.join(","));
+    GetPizza(pName, pSize, pCrust, pQuantity,pArea, pToppings.join(","));
 
-    GetPizza.prototype.CalculaterOrder = function(size, crust, topping, quantity){
+    GetPizza.prototype.CalculaterOrder = function(size, crust, topping, quantity,area){
 
 
         //price per size
@@ -86,16 +89,35 @@ $('#add-item').click((e)=>{
                 // console.log("error");
         }
 
-        total = (crust_price + size_price + (topping.length*topping_price)*quantity)
+        //price per area
+
+        switch(area){
+            case'No':
+            destination_price = 0;
+            break;
+            case'Accessible':
+            destination_price = 300;
+            break;
+            case'Within':
+            destination_price = 500;
+            break;
+            case'None':
+            destination_price = 1000;
+            break;
+
+
+        }
+
+        total = ((crust_price + size_price + destination_price+ (topping.length*topping_price))*quantity)
 
         return total;
     }
 
-    console.log(orderPizza.CalculaterOrder(pSize, pCrust,pToppings,pQuantity));
+    console.log(orderPizza.CalculaterOrder(pSize, pCrust,pToppings,pQuantity,pArea));
 
     //Array containing all orders totals
 
-    totalToppingsArray.push(orderPizza.CalculaterOrder(pSize,pCrust,pToppings,pQuantity))
+    totalToppingsArray.push(orderPizza.CalculaterOrder(pSize,pCrust,pToppings,pQuantity,pArea))
 
     console.log(orderPizza);
     console.log(totalToppingsArray);
@@ -112,17 +134,6 @@ $('#add-item').click((e)=>{
     console.log(getTotals());
 
 
-    // $("#tbod").append('
-    // <tr>
-    // <td id="p-flavor">${orderPizza.name}</td>
-    // <td id="p-size">${orderPizza.size}</td>
-    // <td id="p-crust">${orderPizza.crust}</td>
-    // <td id="p-toppings">${pToppings.join(" ")}</td>
-    // <td id="p-qt">${orderPizza.quantity}</td>
-    // <td id="p-total">${orderPizza.CalculaterOrder(pSize,pCrust,pToppings,pQuantity)}</td>
-    // </tr>
-    // ');
-
     $("#tbod").append(`
 <tr>
 <td id="p-flavor">${orderPizza.name}</td>
@@ -130,8 +141,9 @@ $('#add-item').click((e)=>{
 <td id="p-crust">${orderPizza.crust}</td>
 <td id="p-toppings">${pToppings.join(" ")}</td>
 <td id="p-qt">${orderPizza.quantity}</td>
+<td id="p-area">${orderPizza.area}</td>
 <td
-id="p-total">${orderPizza.CalculaterOrder(pSize,pCrust,pToppings,pQuantity)}</td>
+id="p-total">${orderPizza.CalculaterOrder(pSize,pCrust,pToppings,pQuantity,pArea)}</td>
 </tr>
 `);
 });
