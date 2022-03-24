@@ -16,13 +16,14 @@ let totalToppingsArray = [];
 
 //Pizza function constructor
 
-function GetPizza (name, size, crust, topping, quantity, area){
+function GetPizza (name, size, crust, topping, quantity, area, number){
     this.name = name;
     this.size = size;
     this.crust = crust;
     this.topping = topping;
     this.quantity = quantity;
     this.area = area;
+    this.number = number;
 }
 $('#add-item').click((e)=>{
     e.preventDefault();
@@ -35,9 +36,9 @@ $('#add-item').click((e)=>{
     let pQuantity = $("#qt").val();
     let pToppings = [];
     let pArea = $("#dr option:selected").val();
-    let number = $("#ct").val();
+    let pNumber = $("#ct").val();
 
-    console.log("${pName}${pSize}${pCrust}${pQuantity}${pArea}${number}")
+    console.log("${pName}${pSize}${pCrust}${pQuantity}${pArea}${pNumber}")
 
     $.each($("input[name='toppings']:checked"), function (){
         pToppings.push($(this).val());
