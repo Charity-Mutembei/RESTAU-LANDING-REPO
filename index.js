@@ -5,10 +5,14 @@ let crust_price;
 let size_price;
 let topping_price;
 let destination_price;
+// let number;
 let total = 0;
 
 let getTotals = () => {};
 let totalToppingsArray = [];
+
+
+// console.log(number)
 
 //Pizza function constructor
 
@@ -31,8 +35,9 @@ $('#add-item').click((e)=>{
     let pQuantity = $("#qt").val();
     let pToppings = [];
     let pArea = $("#dr option:selected").val();
+    let number = $("#ct").val();
 
-    console.log("${pName}${pSize}${pCrust}${pQuantity}${pArea}")
+    console.log("${pName}${pSize}${pCrust}${pQuantity}${pArea}${number}")
 
     $.each($("input[name='toppings']:checked"), function (){
         pToppings.push($(this).val());
@@ -148,6 +153,9 @@ id="p-total">${orderPizza.CalculaterOrder(pSize,pCrust,pToppings,pQuantity,pArea
 `);
 });
 
-$("#checkout").click(()=>{
+$("#checkout").click((e)=>{
     console.log(getTotals());
+    alert('We will contact you and have your order delivered to your location')
+    e.preventDefault();
+   
 })
